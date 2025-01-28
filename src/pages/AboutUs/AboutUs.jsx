@@ -20,6 +20,8 @@ const AboutUs = () => {
     }
   };
 
+  //
+
   const { isLoading, data } = useQuery({
     queryKey: ["aboutUsBannerData"],
     queryFn: aboutUsData,
