@@ -70,7 +70,7 @@ const Footer = () => {
         {/* This is the logo Section */}
         <Link to={"/"}>
           <img
-            className="w-[143px] h-10 mb-5 xs:mb-5 sm:mb-5 md:mb-5 lg:mb-0 xl:mb-0 2xl:mb-0"
+            className="w-[100px] xl:w-[143px] 2xl:xl:w-[143px] 3xl:xl:w-[143px] h-8 2xl:h-10 mb-5 xs:mb-5 sm:mb-5 md:mb-5 lg:mb-0 xl:mb-0 2xl:mb-0"
             src={footerData?.data.logo}
             alt=""
           />
