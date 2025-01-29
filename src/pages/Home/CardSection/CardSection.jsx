@@ -30,7 +30,7 @@ const CardSection = () => {
   }
 
   return (
-    <section className="pb-[100px] xs:pb-[100px] sm:pb-[100px] md:pb-[100px] lg:pb-[100px] xl:pb-[100px] 2xl:pb-[100px] 3xl:pb-[100px] px-2 xs:px-2 sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-0">
+    <section className="pb-16 xl:pb-[100px] px-2 xs:px-2 sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-0">
       <div>
         {/* This is the title section start */}
         <div className="flex flex-col text-center items-center space-y-8">
@@ -64,9 +64,17 @@ const CardSection = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-[60px]">
+        <div className="flex justify-center mt-10 xl:mt-[60px]">
           <Link to={"/services"} data-aos="fade-up">
-            <button className="text-primaryColor border-[2px] border-solid border-transparent text-[16px] font-medium bg-[#083EC5] py-[18px] px-[95px] rounded-xl hover:border-button hover:bg-transparent hover:text-button">
+            <button
+              className="
+  text-primaryColor border-[2px] border-solid border-transparent 
+  text-[14px] xs:text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] 
+  font-medium bg-[#083EC5] px-10 xs:px-12 sm:px-14 md:px-20 lg:px-24 
+  rounded-xl hover:border-button hover:bg-transparent hover:text-button 
+  py-3 xs:py-3 sm:py-4 md:py-4 lg:py-4 
+  w-full h-[50px] xs:h-[50px] sm:h-[54px] md:h-[56px] lg:h-[56px]"
+            >
               All view
             </button>
           </Link>
