@@ -61,10 +61,11 @@ const AyosPlatform = () => {
             onClick={() => {
               setisCustomer(true);
             }}
-            className={` mr-8 justify-center items-center ${isCustomer
-              ? "text-2xl text-[#083EC5] font-poppins font-medium"
-              : "text-2xl text-[#42526E] font-poppins font-medium"
-              } `}
+            className={` mr-8 justify-center items-center ${
+              isCustomer
+                ? "text-base lg:text-lg xl:text-xl 2xl:text-2xl text-[#083EC5] font-poppins font-medium"
+                : "text-base lg:text-lg xl:text-xl 2xl:text-2xl text-[#42526E] font-poppins font-medium"
+            } `}
           >
             <div className="flex gap-3 items-center">
               <svg
@@ -86,20 +87,22 @@ const AyosPlatform = () => {
               Customer
             </div>
             <div
-              className={`  ${isCustomer
-                ? "bg-[#083EC5] rounded-full mt-[5px] max-w-[157px] h-[3px] text-center"
-                : "bg-primaryColor rounded-full mt-[5px] ml-2 max-w-[157px] h-[3px] text-center"
-                } `}
+              className={`  ${
+                isCustomer
+                  ? "bg-[#083EC5] rounded-full mt-[5px] max-w-[157px] h-[3px] text-center"
+                  : "bg-primaryColor rounded-full mt-[5px] ml-2 max-w-[157px] h-[3px] text-center"
+              } `}
             ></div>
           </button>
           <button
             onClick={() => {
               setisCustomer(false);
             }}
-            className={`  ${!isCustomer
-              ? "text-2xl text-[#083EC5] font-poppins font-medium"
-              : "text-2xl text-[#42526E] font-poppins font-medium"
-              } `}
+            className={`  ${
+              !isCustomer
+                ? "text-base lg:text-lg xl:text-xl 2xl:text-2xl text-[#083EC5] font-poppins font-medium"
+                : "text-base lg:text-lg xl:text-xl 2xl:text-2xl text-[#42526E] font-poppins font-medium"
+            } `}
           >
             <div className="flex gap-3 items-center">
               <svg
@@ -120,10 +123,11 @@ const AyosPlatform = () => {
               Contractor
             </div>
             <div
-              className={`  ${!isCustomer
-                ? "bg-[#083EC5] rounded-full mt-[5px] ml-2 max-w-[157px] h-[3px] text-center"
-                : "bg-primaryColor rounded-full mt-[5px] ml-2 max-w-[157px] h-[3px] text-center"
-                } `}
+              className={`  ${
+                !isCustomer
+                  ? "bg-[#083EC5] rounded-full mt-[5px] ml-2 max-w-[157px] h-[3px] text-center"
+                  : "bg-primaryColor rounded-full mt-[5px] ml-2 max-w-[157px] h-[3px] text-center"
+              } `}
             ></div>
           </button>
         </div>
@@ -134,7 +138,7 @@ const AyosPlatform = () => {
             <Contractor content={data?.data?.platform_content} />
           )}
         </div>
-        <div className="absolute top-0 left-[-220px]">
+        <div className="absolute top-[300px] lg:top-0 left-0 2xl:left-[-198px]">
           <img src={ayosPlatformPic} alt="" />
         </div>
       </div>

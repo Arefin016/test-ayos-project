@@ -153,7 +153,7 @@ const Footer = () => {
         <h1 className="font-inter text-center">
           {footerData?.data.copyright_text}
         </h1>
-        <div className="flex lg:flex-row flex-col text-center xs:text-center sm:text-center md:text-center gap-0 xs:gap-0 sm:gap-0 md:gap-0 lg:gap-10 mt-5 xs:mt-5 sm:mt-5 md:mt-5 lg:mt-0 xl:mt-0 2xl:mt-0 3xl:mt-0">
+        <div className="flex lg:flex-row flex-col text-center xs:text-center sm:text-center md:text-center gap-0 xs:gap-0 sm:gap-0 md:gap-0 lg:gap-10 mt-4 lg:mt-0">
           {data?.data?.slice(0, 2).map((link, index) => (
             <Link key={index} to={link?.page_slug}>
               <p className="text-[#52525B] font-inter text-[14px] hover:text-blue-700">
