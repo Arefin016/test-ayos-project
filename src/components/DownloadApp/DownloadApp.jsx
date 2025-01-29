@@ -39,7 +39,7 @@ const DownloadApp = () => {
           <div className="mx-4 xs:px-4 sm:mx-4 md:px-4 lg:mx-2 xl:ml-1 2xl:ml-0 3xl:ml-[51px]">
             <h2
               data-aos="fade-up"
-              className="text-secondaryButton text-[20px] xs:text-[24px] sm:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[56px] font-poppins w-[280px] xs:w-[300px] sm:w-[430px] md:w-[550px] lg:w-[650px] xl:w-[400px] 2xl:max-w-[650px] 3xl:w-[650px] font-semibold pt-2 px-2 xs:px-2 sm:px-2 md:px-8 lg:px-10 xl:px-0 2xl:px-0 3xl:0"
+              className="text-secondaryButton text-[24px] xs:text-[24px] sm:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[56px] font-poppins w-[280px] xs:w-[300px] sm:w-[430px] md:w-[550px] lg:w-[650px] xl:w-[400px] 2xl:max-w-[650px] 3xl:w-[650px] font-semibold pt-2 px-2 xs:px-2 sm:px-2 md:px-8 lg:px-10 xl:px-0 2xl:px-0 3xl:0"
             >
               {data?.data.title}
             </h2>

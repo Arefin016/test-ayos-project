@@ -102,7 +102,7 @@ const ContactUs = () => {
       </div>
 
       {/* This is the contact us */}
-      <div className="flex flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-center gap-[60px] lg:gap-[67px] mt-[30px] xs:mt-[40px] sm:mt-[50px] md:mt-[50px] lg:mt-[40px] xl:mt-[40px] 2xl:mt-[40px] 3xl:mt-[73px] px-4 lg:pl-[35px]">
+      <div className="flex flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-center gap-[40px] lg:gap-[67px] mt-[30px] xs:mt-[40px] sm:mt-[50px] md:mt-[50px] lg:mt-[40px] xl:mt-[40px] 2xl:mt-[40px] 3xl:mt-[73px] px-4 lg:pl-[35px]">
         {/* This is the content section */}
         <div className="w-full lg:w-[592px] text-center lg:text-left">
           <h1
