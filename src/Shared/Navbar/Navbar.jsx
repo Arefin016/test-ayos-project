@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/menubar";
 
 const Navbar = () => {
-
   // Fetch navbar data
   const navbarFetchData = async () => {
     try {
@@ -30,10 +29,8 @@ const Navbar = () => {
     queryFn: navbarFetchData,
   });
 
-
-
   return (
-    <section className="w-full container mt-5">
+    <section className="w-full container mt-5 xl:mt-9">
       <div className="flex flex-row justify-between font-poppins items-center navbar">
         {/* Logo Section */}
         <Link to={"/"}>
@@ -51,9 +48,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive
-                    ? "navClassActive"
-                    : "navClass hover:text-[#083EC5]"
+                  isActive ? "navClassActive" : "navClass hover:text-[#083EC5]"
                 }
               >
                 Home
@@ -63,9 +58,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  isActive
-                    ? "navClassActive"
-                    : "navClass hover:text-[#083EC5]"
+                  isActive ? "navClassActive" : "navClass hover:text-[#083EC5]"
                 }
               >
                 About Us
@@ -75,9 +68,7 @@ const Navbar = () => {
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
-                  isActive
-                    ? "navClassActive"
-                    : "navClass hover:text-[#083EC5]"
+                  isActive ? "navClassActive" : "navClass hover:text-[#083EC5]"
                 }
               >
                 Our Services
@@ -87,9 +78,7 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  isActive
-                    ? "navClassActive"
-                    : "navClass hover:text-[#083EC5]"
+                  isActive ? "navClassActive" : "navClass hover:text-[#083EC5]"
                 }
               >
                 Contact Us
@@ -100,7 +89,8 @@ const Navbar = () => {
 
         {/* Sign-up button */}
         <div className="flex md:gap-3 items-center">
-          <Link className="hidden xl:inline-block"
+          <Link
+            className="hidden xl:inline-block"
             to="/signUp"
             data-aos="fade-in"
             data-aos-delay="300"
@@ -169,9 +159,7 @@ const Navbar = () => {
                   </NavLink>
                 </MenubarItem>
                 <MenubarItem>
-                  <Link className="w-full block"
-                    to="/signUp"
-                  >
+                  <Link className="w-full block" to="/signUp">
                     <button className="md:text-xl text-sm border-[2px] border-solid border-transparent bg-button text-[#FFF] px-5 py-1 md:px-[35px] md:py-[11px] rounded-[26px] hover:bg-transparent hover:border-button hover:text-button ease-in-out duration-150">
                       Get to app
                     </button>

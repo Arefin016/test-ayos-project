@@ -15,9 +15,9 @@ const Banner = ({
   appStorePic,
 }) => {
   return (
-    <section className="flex container items-center justify-center pt-10">
+    <section className="flex container items-center justify-center pt-12">
       <div
-        className="w-full rounded-[48px] py-7 md:py-10 h-auto xl:max-h-[800px]"
+        className="w-full rounded-[48px]  h-auto xl:max-h-[800px]"
         style={{
           backgroundImage: `${gradient}, url(${backgroundImage})`,
           backgroundSize: "cover",
