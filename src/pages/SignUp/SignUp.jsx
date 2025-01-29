@@ -33,7 +33,7 @@ const SignUp = () => {
             {/* This is the logo section start */}
             <div className="flex flex-col gap-y-2 xs:gap-y-2 sm:gap-y-[10px] md:gap-y-[26px] lg:gap-y-[26px] xl:gap-y-[26px] 2xl:gap-y-[26px] 3xl:gap-y-[26px] items-center">
               <SiteLogo></SiteLogo>
-              <p className="font-jakarta text-2xl font-bold">
+              <p className="font-jakarta text-base lg:text-lg 2xl:text-2xl font-bold">
                 Download the app
               </p>
             </div>
