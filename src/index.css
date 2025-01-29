@@ -136,7 +136,7 @@
     @apply text-[#172B4D] font-poppins text-[28px] xs:text-[28px] sm:text-[28px] md:text-[30px] lg:text-[30px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[40px] font-semibold;
   }
   .paragraph {
-    @apply text-[#172B4D] font-poppins text-[14px] xs:text-[14px] sm:text-[14px] md:text-[14px] lg:text-[16px] xl:text-xl 2xl:text-xl 3xl:text-xl text-left leading-[180%];
+    @apply text-[#172B4D] font-poppins text-base lg:text-lg xl:text-xl text-left leading-[180%] pl-3 xl:pl-0;
   }
 
   .user-descreption-wrapper strong {
@@ -144,7 +144,7 @@
   }
 
   .user-descreption-wrapper h2 {
-    @apply text-[#172B4D] font-poppins text-[14px] xs:text-[14px] sm:text-[14px] md:text-[14px] lg:text-[16px] xl:text-xl 2xl:text-xl 3xl:text-xl font-normal leading-[180%];
+    @apply text-[#172B4D] font-poppins text-base lg:text-lg xl:text-xl 2xl:text-xl pl-3 xl:pl-0 font-normal leading-[180%];
   }
 
   .user-descreption-wrapper ul {

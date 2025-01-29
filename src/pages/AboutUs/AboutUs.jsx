@@ -112,7 +112,7 @@ const AboutUs = () => {
       )}
       {/* This is the first section start */}
       <section className="my-9 xs:my-9 sm:my-9 md:my-10 lg:my-10 xl:my-[115px] 2xl:my-[115px] 3xl:">
-        <div className="px-3 xs:px-3 sm:px-3 md:px-3 lg:px-3 xl:px-24 2xl:px-[183px] 3xl:px-[183px]">
+        <div className="px-3 xs:px-3 sm:px-3 md:px-3 lg:px-3 xl:px-6 2xl:px-[80px] 3xl:px-[100px] 4xl:px-[183px]">
           {/* First Div */}
           <div
             data-aos="fade-up"
@@ -199,11 +199,11 @@ const AboutUs = () => {
       {/* This is the third section start */}
       <Container width="1560px">
         <section className="mt-10 xs:mt-10 sm:mt-10 md:mt-14 lg:mt-[80px] xl:mt-[100px] 2xl:mt-[120px] 3xl:mt-[120px]">
-          <div className="text-center space-y-[35px] px-3 xs:px-3 sm:px-3 md:px-3 lg:px-3 xl:px-5 2xl:px-5 3xl:px-5 4xl:px-0">
+          <div className="text-center space-y-[35px] px-3 xs:px-3 sm:px-3 md:px-3 lg:px-3 xl:px-5 2xl:px-[50px] 3xl:px-[80px] 4xl:px-0">
             <h1 data-aos="fade-up" className="title">
               {needToUnderData?.data?.title}
             </h1>
-            <div className="user-descreption-wrapper w-[300px] xs:w-[380px] sm:w-[460px] md:w-[560px] lg:w-[740px] xl:w-[970px] 2xl:w-[1160px] 3xl:w-[1460px] 4xl:w-[1560px] text-left mb-5">
+            <div className="user-descreption-wrapper  max-w-[1560px] text-left mb-5">
               {parse(parsedData)}
             </div>
           </div>
