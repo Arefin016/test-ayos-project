@@ -13,7 +13,7 @@ const SignUp = () => {
       <Helmet>
         <title>Ayos || Sign Up</title>
       </Helmet>
-      <section className="mt-[81px] mb-[74px]">
+      <section className="mt-[81px] mb-5 2xl:mb-[74px]">
         <div className="flex flex-col xs:flex-col md:flex-col lg:flex-col xl:flex-col 2xl:flex-col 3xl:flex-row gap-10 xs:gap-10 sm:gap-10 md:gap-16 lg:gap-20 xl:gap-24 2xl:gap-6 3xl:gap-2 px-6 items-center">
           {/* This is the first div */}
           <img

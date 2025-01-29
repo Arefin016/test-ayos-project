@@ -181,7 +181,7 @@ const ContactUs = () => {
 
         {/* This is the input section */}
         <div className="w-full lg:w-auto">
-          <div className="mb-[94px]">
+          <div className="mb-5 2xl:mb-[94px]">
             <h1
               data-aos="fade-up"
               className="text-[#172B4D] font-inter text-[30px] xs:text-[30px] sm:text-[30px] md:text-[31.625px] lg:text-[31.625px] font-medium text-center lg:text-left"
