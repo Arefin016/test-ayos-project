@@ -107,7 +107,7 @@ const ContactUs = () => {
         <div className="w-full lg:w-[592px] text-center lg:text-left">
           <h1
             data-aos="fade-up"
-            className="text-[#172B4D] font-poppins text-[30px] xs:text-[28px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[62px] font-semibold mb-6"
+            className="text-[#172B4D] font-poppins text-[28px] xl:text-[62px] font-semibold mb-6"
           >
             Contact us
           </h1>
@@ -184,7 +184,7 @@ const ContactUs = () => {
           <div className="mb-5 2xl:mb-[94px]">
             <h1
               data-aos="fade-up"
-              className="text-[#172B4D] font-inter text-[30px] xs:text-[30px] sm:text-[30px] md:text-[31.625px] lg:text-[31.625px] font-medium text-center lg:text-left"
+              className="text-[#172B4D] font-inter text-[28px] xl:text-[31.625px] font-medium text-center lg:text-left"
             >
               Send your message
             </h1>

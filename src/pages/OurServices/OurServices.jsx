@@ -88,7 +88,7 @@ const OurServices = () => {
           <div className="flex flex-col space-y-8 justify-center text-center items-center">
             <h1
               data-aos="fade-up"
-              className="text-[#172B4D] font-poppins text-2xl xl:text-[40px] font-semibold px-3 xl:px-0 max-w-[735px] leading-[132%]"
+              className="text-[#172B4D] font-poppins text-[28px] xl:text-[40px] font-semibold px-3 xl:px-0 max-w-[735px] leading-[132%]"
             >
               Best Contractors service for Your Needs!
             </h1>
