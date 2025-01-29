@@ -144,47 +144,47 @@ const AboutUs = () => {
       </section>
       {/* This is the first section end */}
       {/* This is the second section start*/}
-      <section className="bg-[#EEF3FF] px-0 xs:px-0 sm:px-0 md:px-0 lg:px-0 xl:px-[79px] 2xl:px-[79px] 3xl:px-[79px]">
+      <section className="bg-[#EEF3FF]  px-4 xs:px-4 sm:px-4 md:px-5 lg:px-6 xl:px-[79px] 2xl:px-[79px] 3xl:px-[79px]">
         <div className="flex flex-col xs:flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-col 2xl:flex-col 3xl:flex-row gap-4 xs:gap-4 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-10 2xl:gap-10 3xl:gap-10 items-center">
           {/* This is the image section */}
           <div data-aos="zoom-in">
             <img
-              className="w-[300px] xs:w-[340px] sm:w-[460px] md:w-[560px] lg:w-[719px] xl:w-[719px] 2xl:w-[719px] 3xl:w-[719px] h-[300px] xs:h-[340px] sm:h-[460px] md:h-[560px] lg:h-[875px] xl:h-[875px] 2xl:h-[875px] 3xl:h-[875px] object-contain"
+              className="w-full justify-center xl:max-w-[719px] max-h-[875px] object-contain"
               src={transData?.data?.transform?.image}
               alt=""
             />
           </div>
           {/* This is the content section */}
           <div>
-            <div className="space-y-[31px] mb-12 px-5 xs:px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 2xl:px-0 3xl:px-0">
+            <div className="space-y-[31px] mb-6 xl:mb-12">
               <h1
                 data-aos="fade-up"
-                className="text-[#172B4D] font-poppins text-[28px] xs:text-[28px] sm:text-[30px] md:text-[30px] lg:text-[30px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[40px] font-semibold"
+                className="text-[#172B4D] font-poppins text-[28px] px-2 xl:px-0 xl:text-[40px] font-semibold"
               >
                 {transData?.data?.transform?.title}
               </h1>
               <p
                 data-aos="fade-up"
                 data-aos-delay="100"
-                className="text-[#172B4D] font-poppins text-xl font-medium w-[300px] xs:w-[340px] sm:w-[460px] md:w-[560px] lg:w-[760px] xl:w-[902px] 2xl:w-[902px] 3xl:w-[902px]"
+                className="text-[#172B4D] font-poppins text-base xl:text-xl font-medium px-2 xl:px-0 xl:max-w-[902px]"
               >
                 {transData?.data?.transform?.description}
               </p>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="gap-[81px]">
-              <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-2">
+              <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-2 pb-7 xl:pb-5">
                 {transData?.data?.content?.slice(0, 6).map((item, index) => (
                   <div
                     key={index}
                     data-aos="fade-up"
                     data-aos-delay={100 * (index + 1)}
-                    className="w-full xs:w-[400px] sm:w-[400px] md:w-[400px] lg:w-[400px] xl:w-[400px] 2xl:w-[400px] 3xl:w-[400px] px-5 xs:px-5 sm:px-5 md:px-5 lg:px-0 xl:px-5 2xl:px-0 3xl:px-0"
+                    className="w-full"
                   >
-                    <h1 className="aboutTitle mt-[27px] w-[300px] xs:w-[340px] sm:w-[340px] md:w-[340px] lg:w-[340px] xl:w-[340px] 2xl:w-[340px] 3xl:w-[340px]">
+                    <h1 className="aboutTitle mt-[27px] w-[300px] xs:w-[390px] sm:w-[390px] md:w-[390px] lg:w-[390px] xl:w-[390px] 2xl:w-[390px] 3xl:w-[390px]">
                       {item?.title}
                     </h1>
-                    <p className="aboutParagraph mt-4 w-[300px] xs:w-[340px] sm:w-[340px] md:w-[340px] lg:w-[340px] xl:w-[340px] 2xl:w-[340px] 3xl:w-[340px]">
+                    <p className="aboutParagraph mt-4 w-full lg:w-[390px]">
                       {item?.description}
                     </p>
                   </div>
