@@ -33,13 +33,13 @@ const AyosPlatform = () => {
   }
 
   return (
-    <section className="flex container flex-row justify-center items-center mt-20">
+    <section className="flex container flex-row justify-center items-center mt-10 xl:mt-20">
       <div className="relative">
         {/* This is the title section */}
         <div className="flex flex-col items-center justify-center text-center space-y-8 mb-10">
           <h1
             data-aos="fade-up"
-            className="font-poppins text-3xl sm:text-[40px] text-[#172B4D] font-semibold"
+            className="font-poppins text-2xl sm:text-[40px] text-[#172B4D] font-semibold"
           >
             {data?.data?.platform?.title}
           </h1>

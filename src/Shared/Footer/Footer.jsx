@@ -65,7 +65,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="my-[38px] container">
+    <footer className="mt-10 xl:my-[38px] container">
       <div className="flex lg:flex-row flex-col justify-between font-poppins items-center px-5 xs:px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 2xl:px-5 3xl:px-0">
         {/* This is the logo Section */}
         <Link to={"/"}>
