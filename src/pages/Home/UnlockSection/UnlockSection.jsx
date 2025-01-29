@@ -53,7 +53,7 @@ const UnlockSection = () => {
         <div
           data-aos="fade-up"
           data-aos-delay=" 100"
-          className="flex flex-row flex-wrap gap-y-10 gap-x-20 justify-center mt-8"
+          className="flex flex-row flex-wrap gap-y-4 xl:gap-y-10 gap-x-4 xl:gap-x-20 justify-center mt-8"
         >
           {data?.data.map((item) => {
             return (
