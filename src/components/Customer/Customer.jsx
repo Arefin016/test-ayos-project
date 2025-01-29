@@ -1,7 +1,7 @@
 const Customer = ({ content }) => {
   return (
     <section>
-      <div className="grid gap-14 xl:gap-0 xl:grid-cols-2 items-center">
+      <div className="grid gap-14 xl:gap-0 xl:grid-cols-2 items-center max-w-[1504px]">
         {/* This is the content */}
         <div className="flex flex-col space-y-10">
           {content?.customer?.content.map((item, index) => (
@@ -10,10 +10,10 @@ const Customer = ({ content }) => {
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
-              <h1 className="text-[#172B4D] font-poppins text-lg xl:text-xl 2xl:text-[32px] font-semibold mb-[18px]">
+              <h1 className="text-[#172B4D] font-poppins text-lg xl:text-xl 2xl:text-[32px] font-semibold mb-[18px] max-w-[555px]">
                 {item?.title}
               </h1>
-              <p className="text-[#6F767E] font-poppins text-base 2xl:text-[18px] font-normal">
+              <p className="text-[#6F767E] font-poppins text-base 2xl:text-[18px] font-normal max-w-[501px]">
                 {item?.description}
               </p>
             </div>
