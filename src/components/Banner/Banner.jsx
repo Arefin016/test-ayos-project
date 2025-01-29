@@ -25,8 +25,8 @@ const Banner = ({
           backgroundPosition: "center",
         }}
       >
-        <div className="mt-3 xs:mt-3 sm:mt-3 md:mt-3 lg:mt-5 xl:mt-5 2xl:mt-[136px] 3xl:mt-[136px] ml-5 xs:ml-5 sm:ml-5 md:ml-5 lg:ml-7 xl:ml-[62px] 2xl:ml-[62px] 3xl:ml-[62px]">
-          <div className="space-y-5 xs:space-y-5 sm:space-y-6 md:space-y-10 lg:space-y-[45px] xl:space-y-[50px] 2xl:space-y-[66px] 3xl:space-y-[66px]">
+        <div className="mt-3 my-6 2xl:my-[136px] 3xl:mt-[136px] ml-5 xs:ml-5 sm:ml-5 md:ml-5 lg:ml-7 xl:ml-[62px] 2xl:ml-[62px] 3xl:ml-[62px]">
+          <div className="space-y-5 xs:space-y-5 sm:space-y-6 2xl:space-y-[56px] 3xl:space-y-[56px]">
             <h1
               data-aos="fade-up"
               data-aos-delay="100"
@@ -46,8 +46,9 @@ const Banner = ({
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-2 xs:gap-3 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-5 2xl:gap-8 3xl:gap-8 text-center pb-10 xs:pb-10 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 2xl:pb-0 3xl:pb-10 px-2 xl:px-0"
+              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-2 xs:gap-3 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-5 2xl:gap-8 3xl:gap-8 text-center  px-2 xl:px-0"
             >
+              {/* pb-10 xs:pb-10 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 2xl:b-40 3xl:pb-40 */}
               <Link to={playStore}>
                 <img
                   src={playStorePic}
