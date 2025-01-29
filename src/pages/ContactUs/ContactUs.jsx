@@ -181,7 +181,7 @@ const ContactUs = () => {
 
         {/* This is the input section */}
         <div className="w-full lg:w-auto">
-          <div className="mb-5 2xl:mb-[94px]">
+          <div className="mb-5 2xl:mb-[94px] px-5">
             <h1
               data-aos="fade-up"
               className="text-[#172B4D] font-inter text-[28px] xl:text-[31.625px] font-medium text-center lg:text-left"
@@ -190,7 +190,7 @@ const ContactUs = () => {
             </h1>
             {/* Form */}
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-col mt-3 xs:mt-7 sm:mt-6 md:mt-6 lg:mt-6 xl:mt-10 2xl:mt-10 3xl:mt-10 space-y-3 xs:space-y-4 sm:space-y-6 md:space-y-6 lg:space-y-6 xl:space-y-6 2xl:space-y-6 3xl:space-y-6">
+              <div className="flex flex-col mt-3 xs:mt-7 sm:mt-6 md:mt-6 lg:mt-6 xl:mt-10 2xl:mt-10 3xl:mt-10 space-y-3 xs:space-y-4 sm:space-y-6 md:space-y-6 lg:space-y-6 xl:space-y-6 2xl:space-y-6 3xl:space-y-6 px-10">
                 {/* Your Name Field */}
                 <label
                   data-aos="fade-up"
