@@ -79,22 +79,19 @@ const Footer = () => {
         <nav>
           <ul className="flex lg:flex-row flex-col space-y-5 lg:space-y-0 lg:space-x-7 xl:space-x-[55px] 2xl:space-x-[55px] items-center">
             <li>
-              <NavLink to="/" className={"navClass text-base hover:text-[#083EC5]"}>
+              <NavLink to="/" className={"navClass hover:text-[#083EC5]"}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                className={"navClass text-base  hover:text-[#083EC5]"}
-              >
+              <NavLink to="/about" className={"navClass hover:text-[#083EC5]"}>
                 About Us
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/services"
-                className={"navClass text-base hover:text-[#083EC5]"}
+                className={"navClass hover:text-[#083EC5]"}
               >
                 Our Services
               </NavLink>
@@ -102,7 +99,7 @@ const Footer = () => {
             <li>
               <NavLink
                 to="/contact"
-                className={"navClass text-base hover:text-[#083EC5]"}
+                className={"navClass hover:text-[#083EC5]"}
               >
                 Contact Us
               </NavLink>
