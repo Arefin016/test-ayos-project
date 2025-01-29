@@ -60,8 +60,8 @@ const UnlockSection = () => {
               <button
                 className={`${
                   activeButton === item?.id
-                    ? "text-primaryColor font-poppins text-xl bg-[#083EC5] rounded-[13px] py-5 px-[50px] border border-[#083EC5] w-[235px] capitalize"
-                    : "text-[#172B4D] text-xl font-poppins rounded-[13px] border border-[#083EC5] py-5 px-[50px] w-[235px] capitalize"
+                    ? "text-primaryColor font-poppins bg-[#083EC5]  border border-[#083EC5] rounded-[10px] xs:rounded-[10px] sm:rounded-[12px] md:rounded-[13px] text-base lg:text-lg xl:text-xl 2xl:text-2xl py-3 xs:py-4 sm:py-4 md:py-5 px-6 xs:px-8 sm:px-10 md:px-[50px] xs:w-[200px] sm:w-[220px] md:w-[235px] capitalize w-[170px]"
+                    : "text-[#172B4D] font-poppins rounded-[10px] border border-[#083EC5] py-3 xs:rounded-[10px] sm:rounded-[12px] md:rounded-[13px] text-base lg:text-lg xl:text-xl 2xl:text-2xl xs:py-4 sm:py-4 md:py-5 px-6 xs:px-8 sm:px-10 md:px-[50px] w-[170px] xs:w-[200px] sm:w-[220px] md:w-[235px] capitalize"
                 }`}
                 onClick={() => {
                   handleActiveService(item?.id);
