@@ -30,7 +30,7 @@ const ConnectWithBestHome = () => {
 
   return (
     <section className="bg-[#FAFAFA] py-10 mt-28 mb-20 xl:px-20">
-      <div className="container flex flex-col xl:flex-row items-center gap-24">
+      <div className="container flex flex-col xl:flex-row items-center gap-16 xl:gap-24 justify-center">
         <div data-aos="zoom-in">
           <img
             className="h-auto w-full xs:max-w-[70%] sm:max-:w-[60%] md:max-w-[50%] lg:max-w-[40%] xl:max-w-[411px] 2xl:max-w-[411px] 3xl:max-w-[411px] object-cover mx-auto"
@@ -44,7 +44,7 @@ const ConnectWithBestHome = () => {
         <div className="flex flex-col relative">
           <h2
             data-aos="fade-up"
-            className="text-[#172B4D] mb-10 text-2xl md:text-3xl lg:text-4xl font-semibold font-poppins w-full xs:w-full sm:w-full md:w-full lg:max-w-[902px] xl:max-w-[902px] 2xl:max-w-[902px] 3xl:max-w-[902px]"
+            className="text-[#172B4D] mb-[60px] text-2xl md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
           >
             {data?.data.title}
           </h2>
@@ -74,18 +74,18 @@ const ConnectWithBestHome = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row gap-8"
+            className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row gap-8 mt-5 xl:mt-[60px]"
           >
             <Link to={data?.data?.button_two_url}>
               <img
-                className="w-52 mx-auto sm:w-full md:w-auto lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
+                className="w-52 mx-auto sm:w-[50%] md:w-auto lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
                 src={data?.data?.button_one_image}
                 alt="Button 1"
               />
             </Link>
             <Link to={data?.data?.button_one_url}>
               <img
-                className="w-52 mx-auto sm:w-full md:w-auto lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
+                className="w-52 mx-auto sm:w-[50%] md:w-auto lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
                 src={data?.data?.button_two_image}
                 alt="Button 2"
               />
@@ -93,7 +93,7 @@ const ConnectWithBestHome = () => {
           </div>
 
           {/* This is the bucket section */}
-          <div className="hidden absolute top-[422px] right-[-255px] xs:top-[300px] sm:top-[350px] md:top-[400px] lg:top-[422px] xl:top-[422px] 2xl:top-[408px]  xs:right-[-150px] sm:right-[-200px] md:right-[-250px] lg:right-[-255px] xl:right-[-255px] 2xl:right-[-255px] 3xl:right-[-255px]">
+          <div className="absolute top-[398px] right-[-245px] hidden 3xl:block">
             <img
               className="max-w-[200px] xs:max-w-[150px] sm:max-w-[175px] md:max-w-[200px] lg:max-w-[250px] xl:max-w-[300px] 2xl:max-w-[300px] 3xl:max-w-[300px]"
               src={bucketPic}

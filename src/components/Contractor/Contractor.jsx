@@ -14,7 +14,7 @@ const Contractor = ({ content }) => {
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
-              <h1 className="text-[#172B4D] max-w-[539px] font-poppins text-lg xl:text-xl 2xl:text-[32px] font-semibold mb-[18px]">
+              <h1 className="text-[#172B4D] max-w-[555px] font-poppins text-lg xl:text-xl 2xl:text-[32px] font-semibold mb-[18px]">
                 {item?.title}
               </h1>
               <p className="text-[#6F767E] font-poppins text-base 2xl:text-[18px] font-normal max-w-[501px]">
