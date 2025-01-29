@@ -17,7 +17,7 @@ const Banner = ({
   return (
     <section className="flex container items-center justify-center pt-12">
       <div
-        className="w-full rounded-2xl lg:rounded-3xl xl:rounded-[48px] h-auto xl:max-h-[800px]"
+        className="w-full rounded-2xl lg:rounded-3xl xl:rounded-[48px] h-auto "
         style={{
           backgroundImage: `${gradient}, url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -53,14 +53,14 @@ const Banner = ({
                 <img
                   src={playStorePic}
                   alt="Play Store"
-                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[200px] lg:w-[200px] xl:w-[239px] 2xl:w-[239px] 3xl:w-[239px] h-[40px] xs:h-[40px] sm:h-[40px] md:h-[50px] lg:h-[50px] xl:h-[80px] 2xl:h-[80px] 3xl:h-[80px]"
+                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[210px] 2xl:w-[239px] 3xl:w-[239px] h-[40px] xs:h-[40px] sm:h-[40px] md:h-[50px] lg:h-[50px] xl:h-[60px] 2xl:h-[80px] 3xl:h-[80px]"
                 />
               </Link>
               <Link to={appStore}>
                 <img
                   src={appStorePic}
                   alt="App Store"
-                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[200px] lg:w-[200px] xl:w-[239px] 2xl:w-[239px] 3xl:w-[239px] h-[40px] xs:h-[40px] sm:h-[40px] md:h-[50px] lg:h-[50px] xl:h-[80px] 2xl:h-[80px] 3xl:h-[80px]"
+                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[210px] 2xl:w-[239px] 3xl:w-[239px] h-[40px] xs:h-[40px] sm:h-[40px] md:h-[50px] lg:h-[50px] xl:h-[60px] 2xl:h-[80px] 3xl:h-[80px]"
                 />
               </Link>
             </div>
