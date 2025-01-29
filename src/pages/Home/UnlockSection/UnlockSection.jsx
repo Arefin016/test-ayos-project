@@ -58,10 +58,11 @@ const UnlockSection = () => {
           {data?.data.map((item) => {
             return (
               <button
-                className={`${activeButton === item?.id
-                  ? "text-primaryColor font-poppins text-xl bg-[#083EC5] rounded-[13px] py-5 px-[50px] border border-[#083EC5] w-[235px] capitalize"
-                  : "text-[#172B4D] text-xl font-poppins rounded-[13px] border border-[#083EC5] py-5 px-[50px] w-[235px] capitalize"
-                  }`}
+                className={`${
+                  activeButton === item?.id
+                    ? "text-primaryColor font-poppins text-xl bg-[#083EC5] rounded-[13px] py-5 px-[50px] border border-[#083EC5] w-[235px] capitalize"
+                    : "text-[#172B4D] text-xl font-poppins rounded-[13px] border border-[#083EC5] py-5 px-[50px] w-[235px] capitalize"
+                }`}
                 onClick={() => {
                   handleActiveService(item?.id);
                 }}
@@ -73,14 +74,14 @@ const UnlockSection = () => {
           })}
         </div>
         {/* This is the content */}
-        <section className="flex items-center justify-center pt-20">
+        <section className="flex items-center justify-center pt-9 xl:pt-20">
           <div
-            className="relative w-full rounded-[48px] overflow-hidden"
+            className="relative w-full rounded-x lg:rounded-2xl xl:rounded-[48px] overflow-hidden"
             style={{ paddingTop: "56.25%" }}
           >
             {shownService?.video_url && (
               <video
-                className="absolute top-0 left-0 w-full h-full rounded-[48px]"
+                className="absolute top-0 left-0 w-full h-full rounded-xl xl:rounded-[48px] lg:rounded-2xl"
                 src={shownService?.video_url}
                 controls
                 title="Promotional Video"
