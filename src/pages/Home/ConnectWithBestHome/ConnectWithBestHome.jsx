@@ -44,7 +44,7 @@ const ConnectWithBestHome = () => {
         <div className="flex flex-col relative">
           <h2
             data-aos="fade-up"
-            className="text-[#172B4D] mb-[60px] text-2xl md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
+            className="text-[#172B4D] mb-[60px] text-[28px] md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
           >
             {data?.data.title}
           </h2>
@@ -59,7 +59,7 @@ const ConnectWithBestHome = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-[#6F767E] text-[18px] max-w-[770px]"
+              className="text-[#6F767E] text-base xl:text-lg max-w-[770px]"
             >
               With Ayos, discovering trusted home improvement professionals is
               effortless. We <br /> seamlessly connect homeowners and landlords

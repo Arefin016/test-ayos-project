@@ -38,7 +38,7 @@ const Banner = ({
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-primaryColor font-poppins text-lg max-w-[750px] px-2 xl:px-0"
+              className="text-primaryColor font-poppins text-base xl:text-lg max-w-[750px] px-2 xl:px-0"
             >
               {subtitle}
             </p>

@@ -37,17 +37,17 @@ const CardSection = () => {
           <h1
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-[#172B4D] font-poppins text-[25px] xs:text-[25px] sm:text-[28px] md:text-[30px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[40px] font-semibold w-[300px] xs:w-[340px] sm:w-[460px] md:w-[550px] lg:w-[735px] xl:w-[735px] 2xl:w-[735px] 3xl:w-[735px] text-center"
+            className="text-[#172B4D] font-poppins text-[28px] xl:text-[40px] font-semibold w-[300px] xs:w-[340px] sm:w-[460px] md:w-[550px] lg:w-[735px] xl:w-[735px] 2xl:w-[735px] 3xl:w-[735px] text-center"
           >
             Unlock the Best Contractors for Your Needs!
           </h1>
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-[#585858] font-jakarta text-xl"
+            className="text-[#585858] font-jakarta text-base xl:text-xl max-w-[680px]"
           >
             Take control of your wellness journey with personalized AI insights.
-            Track <br /> your progress, stay consistent
+            Track your progress, stay consistent
           </p>
           {/* This is the title section end */}
 

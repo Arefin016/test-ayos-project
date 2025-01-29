@@ -8,7 +8,7 @@ const FAQ = () => {
       <div className="text-center py-5 xs:py-5 sm:py-5 md:py-5 lg:py-5 xl:py-5 2xl:py-20 3xl:py-20 px-5 xs:px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 2xl:px-5 3xl:px-0">
         <h1
           data-aos="fade-up"
-          className="text-[#101828] text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl 3xl:text-4xl font-jakarta font-semibold"
+          className="text-[#101828] text-[28px] xl:text-4xl font-jakarta font-semibold"
         >
           Frequently asked questions
         </h1>
