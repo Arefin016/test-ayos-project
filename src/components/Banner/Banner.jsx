@@ -17,7 +17,7 @@ const Banner = ({
   return (
     <section className="flex container items-center justify-center pt-10">
       <div
-        className="w-full rounded-[48px] py-7 md:py-10"
+        className="w-full rounded-[48px] py-7 md:py-10 h-auto xl:max-h-[800px]"
         style={{
           backgroundImage: `${gradient}, url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -30,7 +30,7 @@ const Banner = ({
             <h1
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-primaryColor font-poppins text-[28px] xs:text-[30px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] 3xl:text-[70px] font-semibold max-w-[1033px]"
+              className="text-primaryColor font-poppins text-[28px] xs:text-[30px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] 3xl:text-[70px] font-semibold max-w-[1033px] px-2 xl:px-0"
             >
               {title}
             </h1>
@@ -38,7 +38,7 @@ const Banner = ({
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-primaryColor font-poppins text-lg"
+              className="text-primaryColor font-poppins text-lg max-w-[750px] px-2 xl:px-0"
             >
               {subtitle}
             </p>
@@ -46,7 +46,7 @@ const Banner = ({
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-2 xs:gap-3 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-5 2xl:gap-8 3xl:gap-8 items-center pb-10 xs:pb-10 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 2xl:pb-0 3xl:pb-10"
+              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-2 xs:gap-3 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-5 2xl:gap-8 3xl:gap-8 text-center pb-10 xs:pb-10 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 2xl:pb-0 3xl:pb-10 px-2 xl:px-0"
             >
               <Link to={playStore}>
                 <img
