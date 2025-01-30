@@ -45,7 +45,7 @@ const UnlockSection = () => {
         <h1
           data-aos="fade-up"
           data-aos-delay=" 100"
-          className="text-center text-[#172B4D] font-poppins text-[28px] lg:text-[40px] font-semibold"
+          className="text-center text-[#172B4D] font-poppins text-[24px] lg:text-[40px] font-semibold"
         >
           Unlock the Best Service for <br /> Your Needs!
         </h1>
