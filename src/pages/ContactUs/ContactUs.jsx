@@ -151,7 +151,7 @@ const ContactUs = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="flex gap-2 mt-6 items-center justify-center lg:justify-start"
+              className="flex gap-2 mt-2 lg:mt-6 items-center justify-center lg:justify-start"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
