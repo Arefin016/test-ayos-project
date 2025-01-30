@@ -77,7 +77,7 @@ const Footer = () => {
         </Link>
         {/* This is the Navigation Section */}
         <nav>
-          <ul className="flex lg:flex-row flex-col space-y- lg:space-y-0 lg:space-x-7 xl:space-x-[55px] 2xl:space-x-[55px] items-center">
+          <ul className="flex lg:flex-row flex-col space-y-2 lg:space-y-0 lg:space-x-7 xl:space-x-[55px] 2xl:space-x-[55px] items-center">
             <li>
               <NavLink to="/" className={"navClass hover:text-[#083EC5]"}>
                 Home
