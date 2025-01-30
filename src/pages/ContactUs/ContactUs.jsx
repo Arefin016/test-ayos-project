@@ -14,12 +14,10 @@ const ContactUs = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log("I'm working");
-
     console.log(data);
     try {
       const response = await apiClient.post("/contact-page/send-message", data);
-      console.log(response.data, "I'm response data");
+      console.log(response.data, "response data");
 
       Swal.fire({
         icon: "success",
@@ -65,8 +63,6 @@ const ContactUs = () => {
     queryFn: contactUsFetchData,
   });
 
-  // console.log(contactUsData?.data);
-
   return (
     <section className="">
       <Helmet>
@@ -77,7 +73,7 @@ const ContactUs = () => {
         <div className="text-center lg:text-left">
           <h1
             data-aos="fade-up"
-            className="text-[#172B4D] font-inter text-[28px] xs:text-[28px] sm:text-[30px] md:text-[35px] lg:text-[45.82px] xl:text-[45.82px] 2xl:text-[45.82px] 3xl:text-[45.82px] mt-2 lg:mt-0 font-medium"
+            className="text-[#172B4D] font-inter text-[28px] xs:text-[28px] sm:text-[30px] md:text-[35px] lg:text-[45.82px] xl:text-[45.82px] 2xl:text-[45.82px] 3xl:text-[45.82px] mt-10 lg:mt-0 font-medium"
           >
             {contactUsData?.data.system_name}
           </h1>
