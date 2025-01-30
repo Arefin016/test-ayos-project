@@ -28,8 +28,6 @@ const TermsCondition = () => {
     return <Empty />;
   }
 
-  console.log(data?.data);
-
   const parsedData =
     typeof data?.data?.page_content === "string"
       ? data?.data?.page_content
