@@ -77,7 +77,7 @@ const Footer = () => {
         </Link>
         {/* This is the Navigation Section */}
         <nav>
-          <ul className="flex lg:flex-row flex-col space-y-5 lg:space-y-0 lg:space-x-7 xl:space-x-[55px] 2xl:space-x-[55px] items-center">
+          <ul className="flex lg:flex-row flex-col space-y- lg:space-y-0 lg:space-x-7 xl:space-x-[55px] 2xl:space-x-[55px] items-center">
             <li>
               <NavLink to="/" className={"navClass hover:text-[#083EC5]"}>
                 Home
@@ -149,7 +149,7 @@ const Footer = () => {
       <div className="bg-[#201F22] h-[1px] opacity-[0.31] mt-8 flex mx-auto w-[80%] xs:w-[80%] sm:w-[80%] md:w-[80%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] 3xl:w-full"></div>
 
       {/* This is the copyright section */}
-      <div className="flex lg:flex-row flex-col justify-between navbarBottom font-inter mt-6 px-5 xs:px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 2xl:px-5 3xl:px-0">
+      <div className="flex lg:flex-row flex-col justify-between navbarBottom font-inter mt-6 mb-3 px-5 xs:px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 2xl:px-5 3xl:px-0">
         <h1 className="font-inter text-center">
           {footerData?.data.copyright_text}
         </h1>
