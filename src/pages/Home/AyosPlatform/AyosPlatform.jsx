@@ -19,6 +19,7 @@ const AyosPlatform = () => {
     }
   };
 
+  // This is the tanstack query section
   const { isLoading, data } = useQuery({
     queryKey: ["platFormData"],
     queryFn: platFormData,
