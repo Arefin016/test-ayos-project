@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 import apiClient from "@/utils/apiClient";
 import { FaBars } from "react-icons/fa6";
 
@@ -13,6 +14,8 @@ import {
 } from "@/components/ui/menubar";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   // Fetch navbar data
   const navbarFetchData = async () => {
     try {
@@ -44,7 +47,7 @@ const Navbar = () => {
         {/* Navigation Section */}
         <nav>
           <ul className="hidden xl:flex space-x-10">
-            <li data-aos="fade-in" data-aos-delay="100">
+            <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -54,7 +57,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li data-aos="fade-in" data-aos-delay="200">
+            <li>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -64,7 +67,7 @@ const Navbar = () => {
                 About Us
               </NavLink>
             </li>
-            <li data-aos="fade-in" data-aos-delay="300">
+            <li>
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
@@ -74,7 +77,7 @@ const Navbar = () => {
                 Our Services
               </NavLink>
             </li>
-            <li data-aos="fade-in" data-aos-delay="400">
+            <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -89,12 +92,7 @@ const Navbar = () => {
 
         {/* Sign-up button */}
         <div className="flex md:gap-3 items-center">
-          <Link
-            className="hidden xl:inline-block"
-            to="/signUp"
-            data-aos="fade-in"
-            data-aos-delay="300"
-          >
+          <Link className="hidden xl:inline-block" to="/signUp">
             <button className="md:text-xl text-sm border-[2px] border-solid border-transparent bg-button text-[#FFF] px-3 py-1 md:px-[35px] md:py-[11px] rounded-[26px] hover:bg-transparent hover:border-button hover:text-button ease-in-out duration-150">
               Get to app
             </button>
@@ -102,14 +100,18 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <Menubar className="xl:hidden border-none p-0">
-            <MenubarMenu>
-              <MenubarTrigger className="w-full h-full px-2">
+            <MenubarMenu open={menuOpen} onOpenChange={setMenuOpen}>
+              <MenubarTrigger
+                className="w-full h-full px-2"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <FaBars className="text-[25px] md:text-4xl" />
               </MenubarTrigger>
               <MenubarContent className="mt-3 p-5 font-semibold space-y-2">
                 <MenubarItem>
                   <NavLink
                     to="/"
+                    onClick={() => setMenuOpen(false)}
                     className={({ isActive }) =>
                       isActive
                         ? "navClassActive text-base md:text-lg"
@@ -123,6 +125,7 @@ const Navbar = () => {
                 <MenubarItem>
                   <NavLink
                     to="/about"
+                    onClick={() => setMenuOpen(false)}
                     className={({ isActive }) =>
                       isActive
                         ? "navClassActive text-base md:text-lg"
@@ -136,6 +139,7 @@ const Navbar = () => {
                 <MenubarItem>
                   <NavLink
                     to="/services"
+                    onClick={() => setMenuOpen(false)}
                     className={({ isActive }) =>
                       isActive
                         ? "navClassActive text-base md:text-lg"
@@ -149,6 +153,7 @@ const Navbar = () => {
                 <MenubarItem>
                   <NavLink
                     to="/contact"
+                    onClick={() => setMenuOpen(false)}
                     className={({ isActive }) =>
                       isActive
                         ? "navClassActive text-base md:text-lg"
@@ -159,7 +164,11 @@ const Navbar = () => {
                   </NavLink>
                 </MenubarItem>
                 <MenubarItem>
-                  <Link className="w-full block" to="/signUp">
+                  <Link
+                    className="w-full block"
+                    to="/signUp"
+                    onClick={() => setMenuOpen(false)}
+                  >
                     <button className="md:text-xl text-sm border-[2px] border-solid border-transparent bg-button text-[#FFF] px-5 py-1 md:px-[35px] md:py-[11px] rounded-[26px] hover:bg-transparent hover:border-button hover:text-button ease-in-out duration-150">
                       Get to app
                     </button>
