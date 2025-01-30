@@ -46,21 +46,20 @@ const Banner = ({
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-4 xl:gap-6 2xl:gap-8 3xl:gap-8 text-center  px-2 xl:px-0"
+              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-4 xl:gap-6 2xl:gap-8 3xl:gap-8 text-center px-2 xl:px-0"
             >
-              {/* pb-10 xs:pb-10 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 2xl:b-40 3xl:pb-40 */}
               <Link to={playStore}>
                 <img
                   src={playStorePic}
                   alt="Play Store"
-                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[210px] 2xl:w-[239px] 3xl:w-[239px] h-[40px] xs:h-[40px] sm:h-[40px] md:h-[50px] lg:h-[50px] xl:h-[60px] 2xl:h-[80px] 3xl:h-[80px]"
+                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[210px] 2xl:w-[239px] 3xl:w-[239px] h-[45px] xs:h-[45px] sm:h-[45px] md:h-[50px] lg:h-[50px] xl:h-[60px] 2xl:h-[80px] 3xl:h-[80px]"
                 />
               </Link>
               <Link to={appStore}>
                 <img
                   src={appStorePic}
                   alt="App Store"
-                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[210px] 2xl:w-[239px] 3xl:w-[239px] h-[40px] xs:h-[40px] sm:h-[40px] md:h-[50px] lg:h-[50px] xl:h-[60px] 2xl:h-[80px] 3xl:h-[80px]"
+                  className="w-[150px] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[200px] xl:w-[210px] 2xl:w-[239px] 3xl:w-[239px] h-[45px] xs:h-[45px] sm:h-[45px] md:h-[50px] lg:h-[50px] xl:h-[60px] 2xl:h-[80px] 3xl:h-[80px]"
                 />
               </Link>
             </div>

@@ -34,7 +34,7 @@ const ConnectWithBestHome = () => {
   }
 
   return (
-    <section className="bg-[#FAFAFA] py-10 mt-14 lg:mt-28 mb-20 xl:px-20">
+    <section className="bg-[#FAFAFA] pt-16 pb-8 lg:py-10 mt-20 lg:mt-28 mb-20 xl:px-20">
       <div className="container flex flex-col xl:flex-row items-center gap-16 xl:gap-24 justify-center">
         <div data-aos="zoom-in">
           <img
@@ -49,7 +49,7 @@ const ConnectWithBestHome = () => {
         <div className="flex flex-col relative">
           <h2
             data-aos="fade-up"
-            className="text-[#172B4D] mb-[60px] text-[28px] md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
+            className="text-[#172B4D] mb-[60px] text-[24px] md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
           >
             {data?.data.title}
           </h2>
