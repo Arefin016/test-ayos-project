@@ -11,9 +11,9 @@ const DownloadApp = () => {
     try {
       const response = await apiClient.get("home-page/app-download");
       return response.data;
-    } catch (err) {
-      console.error("Error fetching data:", err);
-      return null;
+    } catch (error) {
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 

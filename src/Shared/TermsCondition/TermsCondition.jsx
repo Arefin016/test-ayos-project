@@ -10,8 +10,10 @@ const TermsCondition = () => {
       const response = await apiClient.get("/dynamic-pages/terms-conditions");
       return response.data;
     } catch (error) {
-      console.error("Error privacyFetchData", error);
-      return null;
+      console.error("Error fetching data:", err.response?.data || err.message);
+      throw new Error(
+        err.response?.data?.message || "Failed to fetch platform data"
+      );
     }
   };
 

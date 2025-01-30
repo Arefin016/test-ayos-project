@@ -6,13 +6,19 @@ import { Empty } from "antd";
 import apiClient from "@/utils/apiClient";
 
 const ConnectWithBestHome = () => {
+  // Connect With Best Home fetching data section
   const connectWithBestHome = async () => {
     try {
       const response = await apiClient.get("home-page/feature");
       return response.data;
     } catch (error) {
-      console.error("Error fetching data:", err);
-      return null;
+      console.error(
+        "Error fetching data:",
+        error.response?.data || error.message
+      );
+      throw new Error(
+        error.response?.data?.message || "Failed to fetch platform data"
+      );
     }
   };
 
@@ -21,7 +27,6 @@ const ConnectWithBestHome = () => {
     queryFn: connectWithBestHome,
   });
 
-  // console.log(data?.data);
   if (isLoading) return <Spinner />;
 
   if (!data || !data?.data) {

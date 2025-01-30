@@ -9,14 +9,14 @@ import apiClient from "@/utils/apiClient";
 import { Empty } from "antd";
 
 const OurServices = () => {
-  // Banner Data Fetch
+  // Banner Data fetching section
   const fetchBannerData = async () => {
     try {
       const response = await apiClient.get("/service-page/banner");
       return response.data;
     } catch (err) {
-      console.error("Error fetching banner data:", err);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 
@@ -25,14 +25,14 @@ const OurServices = () => {
     queryFn: fetchBannerData,
   });
 
-  // Service Data Fetch
+  // Service Data fetching section
   const fetchServiceData = async () => {
     try {
       const response = await apiClient.get("/home-page/categories");
       return response.data;
     } catch (err) {
-      console.error("Error fetching service data:", err);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 

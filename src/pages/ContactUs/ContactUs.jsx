@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet-async";
 import apiClient from "@/utils/apiClient";
 import { useQuery } from "@tanstack/react-query";
 import Swal from "sweetalert2";
+import Spinner from "@/components/Spinner/Spinner";
+import { Empty } from "antd";
 
 const ContactUs = () => {
   const {
@@ -14,29 +16,30 @@ const ContactUs = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
     try {
       const response = await apiClient.post("/contact-page/send-message", data);
-      console.log(response.data, "response data");
 
+      // Success Alert
       Swal.fire({
         icon: "success",
-        title: response.data.message,
+        title: "Message Sent!",
+        text: response.data.message,
         showConfirmButton: false,
         timer: 1500,
       });
-      reset();
+
+      reset(); // Reset the form
 
       return response.data;
     } catch (err) {
       console.error("Error posting data:", err);
 
-      // Check if error response exists and provide a fallback message
+      // Extract meaningful error message
       const errorMessage =
         err.response?.data?.message ||
         "Something went wrong. Please try again.";
 
-      // Show error toast with fallback message if response message is not available
+      // Error Alert
       Swal.fire({
         icon: "error",
         title: "Submission Failed",
@@ -53,15 +56,17 @@ const ContactUs = () => {
       const response = await apiClient.get("/ayosph/system-info");
       return response.data;
     } catch (error) {
-      console.error("Error fetching footer data", err);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 
-  const { data: contactUsData } = useQuery({
+  const { isLoading, data: contactUsData } = useQuery({
     queryKey: ["footerData"],
     queryFn: contactUsFetchData,
   });
+
+  if (isLoading) return <Spinner />;
 
   return (
     <section className="">

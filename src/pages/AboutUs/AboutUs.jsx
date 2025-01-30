@@ -15,13 +15,12 @@ const AboutUs = () => {
       const response = await apiClient.get("/about-page/banner");
       return response.data;
     } catch (error) {
-      console.error("Error fetching data:", error);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 
-  //
-
+  //This is the tanstack query section
   const { isLoading, data } = useQuery({
     queryKey: ["aboutUsBannerData"],
     queryFn: aboutUsData,
@@ -33,8 +32,8 @@ const AboutUs = () => {
       const response = await apiClient.get("/about-page/about-us-content");
       return response.data;
     } catch (error) {
-      console.error("Error fetching data:", err);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 
@@ -43,15 +42,14 @@ const AboutUs = () => {
     queryFn: paragraphData,
   });
 
-  // console.log(paraData?.data[0]);
-
+  // This is the need to understand data fetching
   const needToUnderstandData = async () => {
     try {
       const response = await apiClient.get("/about-page/need-to-understand");
       return response.data;
     } catch (error) {
-      console.error("Erro fetching data:", err);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 
@@ -66,8 +64,8 @@ const AboutUs = () => {
       const response = await apiClient.get("/about-page/transform");
       return response.data;
     } catch (error) {
-      console.error("Error fething data:", err);
-      return null;
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
     }
   };
 
@@ -76,6 +74,7 @@ const AboutUs = () => {
     queryFn: transformData,
   });
 
+  // This is the react html parser
   const parsedData =
     typeof needToUnderData?.data?.description === "string"
       ? needToUnderData?.data?.description

@@ -8,14 +8,16 @@ import { Empty } from "antd";
 import Spinner from "@/components/Spinner/Spinner";
 
 const AyosPlatform = () => {
-  // Ayos Platform Data fetching
+  // Ayos Platform Data fetching section
   const platFormData = async () => {
     try {
       const response = await apiClient.get("/home-page/platform");
       return response.data;
     } catch (err) {
-      console.error("Error fetching data:", err);
-      return null;
+      console.error("Error fetching data:", err.response?.data || err.message);
+      throw new Error(
+        err.response?.data?.message || "Failed to fetch platform data"
+      );
     }
   };
 

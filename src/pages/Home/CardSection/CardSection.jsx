@@ -1,32 +1,30 @@
 import Card from "@/components/Card/Card";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import Spinner from "@/components/Spinner/Spinner";
+import apiClient from "@/utils/apiClient";
+import { Empty } from "antd";
 
 const CardSection = () => {
-  const apiClient = axios.create({
-    baseURL: import.meta.env.VITE_SITE_URL,
-  });
-
   const cardData = async () => {
-    const response = await apiClient.get("/categories");
-    return response.data;
+    try {
+      const { data } = await apiClient.get("/categories");
+      return data;
+    } catch (error) {
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
+    }
   };
 
-  const { isLoading, error, data } = useQuery({
+  const { isLoading, data } = useQuery({
     queryKey: ["cardData"],
     queryFn: cardData,
   });
 
   if (isLoading) return <Spinner />;
 
-  if (error) {
-    return <div>An error has occurred: {error?.message}</div>;
-  }
-
   if (!data || !data?.data) {
-    return <div>No data found</div>;
+    return <Empty />;
   }
 
   return (

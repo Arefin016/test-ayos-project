@@ -17,8 +17,10 @@ const Home = () => {
       const response = await apiClient.get("/home-page/banner");
       return response.data;
     } catch (err) {
-      console.error("Error fetching data:", err);
-      return null;
+      console.error("Error fetching data:", err.response?.data || err.message);
+      throw new Error(
+        err.response?.data?.message || "Failed to fetch banner data"
+      );
     }
   };
 
