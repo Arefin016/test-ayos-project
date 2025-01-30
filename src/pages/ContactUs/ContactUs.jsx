@@ -68,7 +68,7 @@ const ContactUs = () => {
       <Helmet>
         <title>Ayos || Contact Us</title>
       </Helmet>
-      <div className="flex flex-col lg:flex-row xl:pl-[70px] gap-10 xs:gap-10 sm:gap-8 md:gap-12 xl:gap-12 2xl:gap-[100px] 2xl:pl-[100px] 3xl:gap-[409px] items-center bg-[#F5F6F7] pl-0 3xl:pl-[181px] px-4 lg:pl-[30px] 2xl:justify-between 3xl:justify-normal mt-8">
+      <div className="flex flex-col lg:flex-row xl:pl-[70px] gap-10 xs:gap-10 sm:gap-8 md:gap-12 xl:gap-12 2xl:gap-[100px] 2xl:pl-[100px] 3xl:gap-[409px] items-center bg-[#F5F6F7] pl-0 3xl:pl-[181px] lg:pl-[30px] 2xl:justify-between 3xl:justify-normal mt-8">
         {/* This is the content */}
         <div className="text-center lg:text-left">
           <h1
