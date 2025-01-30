@@ -60,8 +60,8 @@ const UnlockSection = () => {
               <button
                 className={`${
                   activeButton === item?.id
-                    ? "text-primaryColor font-poppins bg-[#083EC5]  border border-[#083EC5] rounded-[10px] xs:rounded-[10px] sm:rounded-[12px] md:rounded-[13px] text-base lg:text-lg xl:text-xl 2xl:text-2xl py-2 xs:py-2 sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-5 px-6 xs:px-8 sm:px-10 md:px-[30px] lg:px-[10px] xl:px-[30px] 2xl:px-[50px] xs:w-[150px] sm:w-[170px] md:w-[170px] lg:w-[235px] capitalize w-[135px]"
-                    : "text-[#172B4D] font-poppins rounded-[10px] border border-[#083EC5] py-2 xs:rounded-[10px] sm:rounded-[12px] md:rounded-[13px] text-base lg:text-lg xl:text-xl 2xl:text-2xl xs:py-2 sm:py-3 md:py-3 px-6 xs:px-8 sm:px-10 w-[135px] xs:w-[150px] sm:w-[170px] md:w-[170px] lg:w-[235px] capitalize lg:py-3 xl:py-3 2xl:py-5 md:px-[30px] lg:px-[10px] xl:px-[30px] 2xl:px-[50px]"
+                    ? "text-primaryColor font-poppins bg-[#083EC5]  border border-[#083EC5] rounded-[10px] xs:rounded-[10px] sm:rounded-[12px] md:rounded-[13px] text-xs lg:text-lg xl:text-xl 2xl:text-2xl py-2 xs:py-2 sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-5 px-6 xs:px-8 sm:px-10 md:px-[30px] lg:px-[10px] xl:px-[30px] 2xl:px-[50px] xs:w-[150px] sm:w-[170px] md:w-[170px] lg:w-[235px] capitalize w-[135px]"
+                    : "text-[#172B4D] font-poppins rounded-[10px] border border-[#083EC5] py-2 xs:rounded-[10px] sm:rounded-[12px] md:rounded-[13px] text-xs lg:text-lg xl:text-xl 2xl:text-2xl xs:py-2 sm:py-3 md:py-3 px-6 xs:px-8 sm:px-10 w-[135px] xs:w-[150px] sm:w-[170px] md:w-[170px] lg:w-[235px] capitalize lg:py-3 xl:py-3 2xl:py-5 md:px-[30px] lg:px-[10px] xl:px-[30px] 2xl:px-[50px]"
                 }`}
                 onClick={() => {
                   handleActiveService(item?.id);
