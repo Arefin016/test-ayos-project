@@ -3,7 +3,7 @@ const Contractor = ({ content }) => {
     <section className="container">
       <div className="grid xl:gap-0 xl:grid-cols-2 items-center max-w-[1465px]">
         {/* This is the image Content */}
-        <div data-aos="zoom-in" className="max-w-[823px] object-cover">
+        <div data-aos="zoom-in" className="max-w-[823px] object-cover z-[999]">
           <img src={content?.contractor?.thumbnail} alt="" />
         </div>
         {/* This is the content */}

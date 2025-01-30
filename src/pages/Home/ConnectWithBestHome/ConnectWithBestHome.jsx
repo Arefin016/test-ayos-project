@@ -29,7 +29,7 @@ const ConnectWithBestHome = () => {
   }
 
   return (
-    <section className="bg-[#FAFAFA] py-10 mt-28 mb-20 xl:px-20">
+    <section className="bg-[#FAFAFA] py-10 mt-14 lg:mt-28 mb-20 xl:px-20">
       <div className="container flex flex-col xl:flex-row items-center gap-16 xl:gap-24 justify-center">
         <div data-aos="zoom-in">
           <img
