@@ -74,18 +74,18 @@ const ConnectWithBestHome = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row gap-8 mt-5 xl:mt-[60px]"
+            className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row gap-3 md:gap-8 mt-5 lg:mt-10 xl:mt-[60px] justify-center xl:justify-normal"
           >
             <Link to={data?.data?.button_two_url}>
               <img
-                className="w-52 mx-auto sm:w-[50%] md:w-auto lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
+                className="w-[150px] mx-auto md:h-[45px] lg:h-[55px] xl:h-[65px] md:w-[150px] lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
                 src={data?.data?.button_one_image}
                 alt="Button 1"
               />
             </Link>
             <Link to={data?.data?.button_one_url}>
               <img
-                className="w-52 mx-auto sm:w-[50%] md:w-auto lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
+                className="w-[150px] md:h-[45px] lg:h-[55px] xl:h-[65px] mx-auto md:w-[150px] lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto" // Makes image responsive based on screen size
                 src={data?.data?.button_two_image}
                 alt="Button 2"
               />
