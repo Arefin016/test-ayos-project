@@ -39,14 +39,14 @@ const DownloadApp = () => {
           <div className="mx-4 xs:px-4 sm:mx-4 md:px-4 lg:mx-2 xl:ml-1 2xl:ml-0 3xl:ml-[51px]">
             <h2
               data-aos="fade-up"
-              className="text-secondaryButton text-[24px] xs:text-[24px] sm:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[56px] font-poppins w-[280px] xs:w-[300px] sm:w-[430px] md:w-[550px] lg:w-[650px] xl:w-[400px] 2xl:max-w-[650px] 3xl:w-[650px] font-semibold pt-2 px-2 xs:px-2 sm:px-2 md:px-8 lg:px-10 xl:px-0 2xl:px-0 3xl:0"
+              className="text-secondaryButton text-[24px] xs:text-[24px] sm:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[40px] 2xl:text-[40px] 3xl:text-[56px] font-poppins w-[280px] xs:w-[300px] sm:w-[430px] md:w-[550px] lg:w-[650px] xl:w-[400px] 2xl:max-w-[650px] 3xl:w-[650px] font-semibold pt-2 px-4 xs:px-2 sm:px-2 md:px-8 lg:px-10 xl:px-0 2xl:px-0 3xl:0"
             >
               {data?.data.title}
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay=" 100"
-              className="text-[#585858] text-[16px] xs:text-[16px] sm:text-[16px] md:text-lg lg:text-xl xl:text-xl 2xl:text-xl 3xl:text-xl font-poppins font-normal mt-6 w-[290px] xs:w-[300px] sm:w-[430px] md:w-full lg:w-[720px] xl:w-[400px] 2xl:max-w-[720px] 3xl:w-[720px] px-2 xs:px-2 sm:px-2 md:px-8 lg:px-10 xl:px-0 2xl:px-0 3xl:0"
+              className="text-[#585858] text-[16px] xs:text-[16px] sm:text-[16px] md:text-lg lg:text-xl xl:text-xl 2xl:text-xl 3xl:text-xl font-poppins font-normal mt-6 w-[290px] xs:w-[300px] sm:w-[430px] md:w-full lg:w-[720px] xl:w-[400px] 2xl:max-w-[720px] 3xl:w-[720px] px-4 xs:px-2 sm:px-2 md:px-8 lg:px-10 xl:px-0 2xl:px-0 3xl:0"
             >
               {data?.data?.description}
             </p>
@@ -54,18 +54,18 @@ const DownloadApp = () => {
             <div
               data-aos="fade-up"
               data-aos-delay=" 200"
-              className="flex flex-row gap-2 text-center justify-center xs:justify-center sm:justify-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-normal 3xl:justify-normal xs:gap-4 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4 3xl:gap-4 mt-[50px] pb-5 xs:pb-5 sm:pb-5 md:pb-5 lg:pb-5 xl:pb-0 2xl:pb-0 3xl:pb-0"
+              className="flex flex-col md:flex-row  gap-2 text-center justify-center xs:justify-center sm:justify-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-normal 3xl:justify-normal xs:gap-4 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4 3xl:gap-4 mt-[50px] pb-5 xs:pb-5 sm:pb-5 md:pb-5 lg:pb-5 xl:pb-0 2xl:pb-0 3xl:pb-0"
             >
               <Link to={data?.data?.button_two_url}>
                 <img
-                  className="w-[180px] xs:w-[208px] sm:w-[208px] md:w-[208px] lg:w-[208px] xl:w-[208px] 2xl:w-[208px] 3xl:w-[208px] h-[65px] xs:h-[65px] sm:h-[65px] md:h-[65px] lg:h-[65px] xl:h-[65px] 2xl:h-[65px] 3xl:h-[65px]"
+                  className="w-[150px] mx-auto md:h-[45px] lg:h-[55px] xl:h-[65px] md:w-[150px] lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto"
                   src={data?.data?.button_one_image}
                   alt="Play Store"
                 />
               </Link>
               <Link to={data?.data?.button_one_url}>
                 <img
-                  className="w-[180px] xs:w-[208px] sm:w-[208px] md:w-[208px] lg:w-[208px] xl:w-[208px] 2xl:w-[208px] 3xl:w-[208px] h-[65px] xs:h-[65px] sm:h-[65px] md:h-[65px] lg:h-[65px] xl:h-[65px] 2xl:h-[65px] 3xl:h-[65px]"
+                  className="w-[150px] mx-auto md:h-[45px] lg:h-[55px] xl:h-[65px] md:w-[150px] lg:w-auto xl:w-auto 2xl:w-auto 3xl:w-auto"
                   src={data?.data?.button_two_image}
                   alt="App Store"
                 />
