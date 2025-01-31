@@ -55,7 +55,7 @@ const SignUp = () => {
                   />
                 </Link>
               </div>
-              <p className=" text-[16px] font-normal leading-[180%] text-[#172B4D] text-center ">
+              <p className="text-[16px] font-normal leading-[180%] text-[#172B4D] text-center ">
                 ou have to download the app to log in as a contractor. Click on
                 the button to download the app.
               </p>

@@ -5,7 +5,6 @@ import apiClient from "@/utils/apiClient";
 import { useQuery } from "@tanstack/react-query";
 import Swal from "sweetalert2";
 import Spinner from "@/components/Spinner/Spinner";
-import { Empty } from "antd";
 
 const ContactUs = () => {
   const {
@@ -54,15 +53,25 @@ const ContactUs = () => {
   const contactUsFetchData = async () => {
     try {
       const response = await apiClient.get("/ayosph/system-info");
+
+      if (!response.data) {
+        throw new Error("No data received from the server");
+      }
       return response.data;
     } catch (error) {
-      console.error("Error fetching card data:", error.message || error);
-      throw new Error("Failed to fetch card data");
+      console.error(
+        "Error fetching card data:",
+        error?.response?.data || error.message || error
+      );
+      throw new Error(
+        error?.response?.data?.message || "Failed to fetch card data"
+      );
     }
   };
 
+  // React Query
   const { isLoading, data: contactUsData } = useQuery({
-    queryKey: ["footerData"],
+    queryKey: ["contactUsData"],
     queryFn: contactUsFetchData,
   });
 
