@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import apiClient from "@/utils/apiClient";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -33,6 +33,17 @@ const Navbar = () => {
   const onClose = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className="w-full container mt-5 xl:mt-9">
