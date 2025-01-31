@@ -8,17 +8,25 @@ const TermsCondition = () => {
   const termFetchData = async () => {
     try {
       const response = await apiClient.get("/dynamic-pages/terms-conditions");
+
+      if (!response.data) {
+        throw new Error("No data received from server");
+      }
+
       return response.data;
     } catch (error) {
-      console.error("Error fetching data:", err.response?.data || err.message);
+      console.error(
+        "Error fetching data:",
+        error.response?.data || error.message
+      );
       throw new Error(
-        err.response?.data?.message || "Failed to fetch platform data"
+        error.response?.data?.message || "Failed to fetch platform data"
       );
     }
   };
 
   const { data, isLoading } = useQuery({
-    queryKey: ["privacyData"],
+    queryKey: ["termsData"],
     queryFn: termFetchData,
   });
 
