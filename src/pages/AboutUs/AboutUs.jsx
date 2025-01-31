@@ -172,18 +172,18 @@ const AboutUs = () => {
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="gap-[81px]">
-              <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-2 pb-7 xl:pb-5">
+              <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-2 pb-7 xl:pb-5 gap-0 lg:gap-8 xl:gap-0">
                 {transData?.data?.content?.slice(0, 6).map((item, index) => (
                   <div
                     key={index}
                     data-aos="fade-up"
                     data-aos-delay={100 * (index + 1)}
-                    className="w-full"
+                    className="w-full lg:w-[350px] xl:w-full"
                   >
                     <h1 className="aboutTitle mt-[27px] w-[300px] xs:w-[390px] sm:w-[390px] md:w-[390px] lg:w-[390px] xl:w-[390px] 2xl:w-[390px] 3xl:w-[390px]">
                       {item?.title}
                     </h1>
-                    <p className="aboutParagraph mt-4 w-full lg:w-[390px]">
+                    <p className="aboutParagraph mt-4 w-full md:w-[80%] lg:w-[390px]">
                       {item?.description}
                     </p>
                   </div>

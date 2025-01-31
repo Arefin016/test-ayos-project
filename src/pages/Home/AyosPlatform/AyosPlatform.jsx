@@ -141,7 +141,7 @@ const AyosPlatform = () => {
             <Contractor content={data?.data?.platform_content} />
           )}
         </div>
-        <div className="absolute top-[300px] lg:top-0 left-0 2xl:left-[-198px]">
+        <div className="absolute top-[300px] lg:top-0 left-0 2xl:left-[-198px] pointer-events-none">
           <img src={ayosPlatformPic} alt="" />
         </div>
       </div>
