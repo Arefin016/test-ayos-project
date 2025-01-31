@@ -2,19 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import apiClient from "@/utils/apiClient";
-import { FaBars } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
+import { Drawer } from "antd";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   // Fetch navbar data
   const navbarFetchData = async () => {
@@ -31,6 +24,15 @@ const Navbar = () => {
     queryKey: ["navbarData"],
     queryFn: navbarFetchData,
   });
+
+  // This is the responsive drawer
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
 
   return (
     <section className="w-full container mt-5 xl:mt-9">
@@ -98,85 +100,90 @@ const Navbar = () => {
             </button>
           </Link>
 
-          {/* Mobile Menu */}
-          <Menubar className="xl:hidden border-none p-0">
-            <MenubarMenu open={menuOpen} onOpenChange={setMenuOpen}>
-              <MenubarTrigger
-                className="w-full h-full px-2"
-                onClick={() => setMenuOpen(!menuOpen)}
-              >
-                <FaBars className="text-[25px] md:text-4xl" />
-              </MenubarTrigger>
-              <MenubarContent className="mt-3 p-5 font-semibold space-y-2">
-                <MenubarItem>
-                  <NavLink
-                    to="/"
-                    onClick={() => setMenuOpen(false)}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "navClassActive text-base md:text-lg"
-                        : "navClass text-base md:text-lg hover:text-[#083EC5]"
-                    }
+          <RxHamburgerMenu
+            size={24}
+            className="xl:hidden cursor-pointer"
+            onClick={showDrawer}
+          />
+
+          {/* Drawer (Mobile Only) */}
+          <Drawer
+            title="Ayos"
+            onClose={onClose}
+            open={open}
+            className="md:hidden"
+          >
+            <ul className="space-y-4 flex flex-col items-center justify-center mt-14">
+              <li data-aos="fade-in" data-aos-delay="100">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "navClassActive"
+                      : "navClass hover:text-[#083EC5]"
+                  }
+                  onClick={onClose}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li data-aos="fade-in" data-aos-delay="200">
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "navClassActive"
+                      : "navClass hover:text-[#083EC5]"
+                  }
+                  onClick={onClose}
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li data-aos="fade-in" data-aos-delay="300">
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "navClassActive"
+                      : "navClass hover:text-[#083EC5]"
+                  }
+                  onClick={onClose}
+                >
+                  Our Services
+                </NavLink>
+              </li>
+              <li data-aos="fade-in" data-aos-delay="400">
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "navClassActive"
+                      : "navClass hover:text-[#083EC5]"
+                  }
+                  onClick={onClose}
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+              {/* Get to App button */}
+              <li data-aos="fade-in" data-aos-delay="500">
+                <Link
+                  to="/signUp"
+                  data-aos="fade-in"
+                  data-aos-delay="300"
+                  className="xl:flex 2xl:flex 3xl:flex"
+                >
+                  <button
+                    onClick={onClose}
+                    className="text-base border-[2px] border-solid border-transparent bg-button text-[#FFF] px-6 py-2 rounded-[26px] hover:bg-transparent hover:border-button hover:text-button ease-in-out duration-150"
                   >
-                    Home
-                  </NavLink>
-                </MenubarItem>
-                <MenubarSeparator />
-                <MenubarItem>
-                  <NavLink
-                    to="/about"
-                    onClick={() => setMenuOpen(false)}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "navClassActive text-base md:text-lg"
-                        : "navClass text-base md:text-lg hover:text-[#083EC5]"
-                    }
-                  >
-                    About Us
-                  </NavLink>
-                </MenubarItem>
-                <MenubarSeparator />
-                <MenubarItem>
-                  <NavLink
-                    to="/services"
-                    onClick={() => setMenuOpen(false)}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "navClassActive text-base md:text-lg"
-                        : "navClass text-base md:text-lg hover:text-[#083EC5]"
-                    }
-                  >
-                    Our Services
-                  </NavLink>
-                </MenubarItem>
-                <MenubarSeparator />
-                <MenubarItem>
-                  <NavLink
-                    to="/contact"
-                    onClick={() => setMenuOpen(false)}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "navClassActive text-base md:text-lg"
-                        : "navClass text-base md:text-lg hover:text-[#083EC5]"
-                    }
-                  >
-                    Contact Us
-                  </NavLink>
-                </MenubarItem>
-                <MenubarItem>
-                  <Link
-                    className="w-full block"
-                    to="/signUp"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    <button className="md:text-xl text-sm border-[2px] border-solid border-transparent bg-button text-[#FFF] px-5 py-1 md:px-[35px] md:py-[11px] rounded-[26px] hover:bg-transparent hover:border-button hover:text-button ease-in-out duration-150">
-                      Get to app
-                    </button>
-                  </Link>
-                </MenubarItem>
-              </MenubarContent>
-            </MenubarMenu>
-          </Menubar>
+                    Get to app
+                  </button>
+                </Link>
+              </li>
+            </ul>
+          </Drawer>
         </div>
       </div>
     </section>
