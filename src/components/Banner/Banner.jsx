@@ -46,7 +46,7 @@ const Banner = ({
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-4 xl:gap-6 2xl:gap-8 3xl:gap-8 text-center px-2 xl:px-0"
+              className="flex flex-col xs:flex-col sm:flex-col md:flex-row lg:flex-row gap-2 xl:gap-6 2xl:gap-8 3xl:gap-8 text-center px-2 xl:px-0"
             >
               <Link to={playStore}>
                 <img

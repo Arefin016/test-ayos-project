@@ -116,7 +116,7 @@ const AboutUs = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-center space-y-[35px]"
+            className="text-center space-y-7 md:space-y-[35px]"
           >
             <h1 className="title">{paraData?.data[0].title}</h1>
             <p className="paragraph">{paraData?.data[0].description}</p>
@@ -125,7 +125,7 @@ const AboutUs = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-center space-y-[35px] mt-8 xs:mt-8 sm:mt-8 md:mt-8 lg:mt-[88px] xl:mt-[88px] 2xl:mt-[88px] 3xl:mt-[88px]"
+            className="text-center space-y-7 md:space-y-[35px] mt-8 xs:mt-8 sm:mt-8 md:mt-8 lg:mt-[88px] xl:mt-[88px] 2xl:mt-[88px] 3xl:mt-[88px]"
           >
             <h1 className="title">{paraData?.data[1].title}</h1>
             <p className="paragraph">{paraData?.data[1].description}</p>
@@ -134,7 +134,7 @@ const AboutUs = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="300"
-            className="text-center space-y-[35px] mt-8 xs:mt-8 sm:mt-8 md:mt-8 lg:mt-[88px] xl:mt-[88px] 2xl:mt-[88px] 3xl:mt-[88px]"
+            className="text-center space-y-7 md:space-y-[35px] mt-8 xs:mt-8 sm:mt-8 md:mt-8 lg:mt-[88px] xl:mt-[88px] 2xl:mt-[88px] 3xl:mt-[88px]"
           >
             <h1 className="title">{paraData?.data[2].title}</h1>
             <p className="paragraph">{paraData?.data[2].description}</p>

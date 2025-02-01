@@ -49,7 +49,7 @@ const ConnectWithBestHome = () => {
         <div className="flex flex-col relative">
           <h2
             data-aos="fade-up"
-            className="text-[#172B4D] mb-[60px] text-[24px] md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
+            className="text-[#172B4D] mb-[40px] md:mb-[60px] text-[24px] md:text-3xl lg:text-4xl font-semibold font-poppins w-auto 3xl:max-w-[902px]"
           >
             {data?.data.title}
           </h2>

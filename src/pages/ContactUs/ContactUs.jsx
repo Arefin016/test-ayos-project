@@ -94,7 +94,7 @@ const ContactUs = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-[#5D6467] xs:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl lg:ml-0 ml-[15px] font-roboto mt-2 sm:mt-3 md:mt-3 lg:mt-[18px] xl:mt-[18px] 2xl:mt-[18px] 3xl:mt-[18px]"
+            className="text-[#5D6467] xs:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl lg:ml-0 sm:ml-[15px] font-roboto mt-2 sm:mt-3 md:mt-3 lg:mt-[18px] xl:mt-[18px] 2xl:mt-[18px] 3xl:mt-[18px max-w-[370px]"
           >
             {contactUsData?.data?.description}
           </p>
