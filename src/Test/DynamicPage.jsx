@@ -2,32 +2,35 @@ import Spinner from "@/components/Spinner/Spinner";
 import apiClient from "@/utils/apiClient";
 import { useQuery } from "@tanstack/react-query";
 import { Empty } from "antd";
+import React from "react";
+import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
 
-const TermsCondition = () => {
-  const termFetchData = async () => {
-    try {
-      const response = await apiClient.get("/dynamic-pages/terms-conditions");
+const DynamicPage = () => {
+  const { page_slug } = useParams();
+  console.log(page_slug);
 
+  const DynamicFetchData = async () => {
+    try {
+      const response = await apiClient.get(`/dynamic-pages/${page_slug}`);
       if (!response.data) {
         throw new Error("No data received from server");
       }
-
       return response.data;
     } catch (error) {
       console.error(
-        "Error fetching data:",
+        "Error fetching privacy policy data:",
         error.response?.data || error.message
       );
       throw new Error(
-        error.response?.data?.message || "Failed to fetch platform data"
+        error.response?.data?.message || "Failed to fetch privacy policy data"
       );
     }
   };
 
   const { data, isLoading } = useQuery({
-    queryKey: ["termsData"],
-    queryFn: termFetchData,
+    queryKey: ["dynamicFetchData"],
+    queryFn: DynamicFetchData,
   });
 
   if (isLoading) return <Spinner />;
@@ -36,12 +39,12 @@ const TermsCondition = () => {
     return <Empty />;
   }
 
-  console.log(data);
-
   const parsedData =
     typeof data?.data?.page_content === "string"
       ? data?.data?.page_content
       : String(data?.data?.page_content);
+
+  console.log(data);
 
   return (
     <section className="text-center mt-12 xl:mt-16 mb-[70px] h-auto">
@@ -55,4 +58,4 @@ const TermsCondition = () => {
   );
 };
 
-export default TermsCondition;
+export default DynamicPage;

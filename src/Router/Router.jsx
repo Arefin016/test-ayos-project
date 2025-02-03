@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUs/ContactUs";
 import SignUp from "../pages/SignUp/SignUp";
 import TermsCondition from "@/Shared/TermsCondition/TermsCondition";
 import PrivacyPolicy from "@/Shared/PrivacyPolicy/PrivacyPolicy";
+import DynamicPage from "@/Test/DynamicPage";
 
 export const router = createBrowserRouter([
   {
@@ -33,13 +34,17 @@ export const router = createBrowserRouter([
         path: "/signUp",
         element: <SignUp></SignUp>,
       },
+      // {
+      //   path: "/terms-conditions",
+      //   element: <TermsCondition />,
+      // },
+      // {
+      //   path: "/privacy-policy",
+      //   element: <PrivacyPolicy />,
+      // },
       {
-        path: "/terms-conditions",
-        element: <TermsCondition />,
-      },
-      {
-        path: "/privacy-policy",
-        element: <PrivacyPolicy />,
+        path: "/:page_slug",
+        element: <DynamicPage />,
       },
     ],
   },
