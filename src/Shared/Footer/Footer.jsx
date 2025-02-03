@@ -154,7 +154,7 @@ const Footer = () => {
           {footerData?.data.copyright_text}
         </h1>
         <div className="flex lg:flex-row flex-col text-center xs:text-center sm:text-center md:text-center gap-0 xs:gap-0 sm:gap-0 md:gap-0 lg:gap-10 mt-4 lg:mt-0">
-          {data?.data?.slice(0, 2).map((link, index) => (
+          {data?.data.map((link, index) => (
             <Link key={index} to={link?.page_slug}>
               <p className="text-[#52525B] font-inter text-[14px] hover:text-blue-700">
                 {link?.page_title}
