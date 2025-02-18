@@ -26,6 +26,8 @@ const AboutUs = () => {
     queryFn: aboutUsData,
   });
 
+  console.log(data.data.background_image);
+
   // about us paragraph data fatching
   const paragraphData = async () => {
     try {
@@ -99,7 +101,7 @@ const AboutUs = () => {
         <Banner
           title={data?.data?.title}
           subtitle={data?.data?.description}
-          backgroundImage="https://i.postimg.cc/05X80Z13/image.png"
+          backgroundImage={data?.data?.background_image}
           gradient="linear-gradient(90deg, rgba(9, 25, 64, 0.80) -0.85%, rgba(23, 64, 166, 0.00) 99.73%)"
           playStore={data?.data?.button_two_url}
           appStore={data?.data?.button_one_url}

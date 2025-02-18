@@ -17,7 +17,7 @@ const Banner = ({
   return (
     <section className="flex container items-center justify-center pt-12">
       <div
-        className="w-full rounded-2xl lg:rounded-3xl xl:rounded-[48px] h-auto "
+        className="w-full rounded-2xl lg:rounded-3xl xl:rounded-[48px] h-auto"
         style={{
           backgroundImage: `${gradient}, url(${backgroundImage})`,
           backgroundSize: "cover",
