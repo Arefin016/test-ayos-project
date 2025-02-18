@@ -26,7 +26,7 @@ const AboutUs = () => {
     queryFn: aboutUsData,
   });
 
-  console.log(data.data.background_image);
+  // console.log(data?.data?.background_image);
 
   // about us paragraph data fatching
   const paragraphData = async () => {
