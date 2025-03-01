@@ -45,6 +45,23 @@ const OurServices = () => {
     queryFn: fetchServiceData,
   });
 
+  const serviceCategoryData = async () => {
+    try {
+      const response = await apiClient.get("/service-page/category-section");
+      return response.data;
+    } catch (err) {
+      console.error("Error fetching card data:", error.message || error);
+      throw new Error("Failed to fetch card data");
+    }
+  };
+
+  const { data: categoryData } = useQuery({
+    queryKey: ["category-data"],
+    queryFn: serviceCategoryData,
+  });
+
+  // console.log(categoryData?.data?.description);
+
   // Handle services data safely
   const services = serviceResponse?.data || [];
 
@@ -90,15 +107,14 @@ const OurServices = () => {
               data-aos="fade-up"
               className="text-[#172B4D] font-poppins text-[28px] xl:text-[40px] font-semibold px-3 xl:px-0 max-w-[735px] leading-[132%]"
             >
-              Best Contractors service for Your Needs!
+              {categoryData?.data?.title}
             </h1>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
               className="text-[#585858] font-jakarta text-base xl:text-xl text-center max-w-[670px] px-3 xl:px-0"
             >
-              Take control of your wellness journey with personalized AI
-              insights. Track your progress, stay consistent
+              {categoryData?.data?.description}
             </p>
           </div>
           {/* Card Section  */}
