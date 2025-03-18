@@ -29,7 +29,7 @@ const DynamicPage = () => {
   };
 
   const { data, isLoading } = useQuery({
-    queryKey: ["dynamicFetchData"],
+    queryKey: ["dynamicFetchData",page_slug],
     queryFn: DynamicFetchData,
   });
 

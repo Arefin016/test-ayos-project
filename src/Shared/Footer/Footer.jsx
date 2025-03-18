@@ -137,7 +137,6 @@ const Footer = () => {
         </div>
       </div>
       {/* This is the border section */}
-
       <div className="bg-[#201F22] h-[1px] opacity-[0.31] mt-8 flex mx-auto w-[80%] xs:w-[80%] sm:w-[80%] md:w-[80%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] 3xl:w-full"></div>
 
       {/* This is the copyright section */}
